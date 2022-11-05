@@ -1,0 +1,29 @@
+html, body {
+  height: 100%;  
+  color: $main-text-color;
+  font-family: $font-family-onest;
+  font-weight: 300;
+  min-width: 320px;
+}
+a {
+  color: $primary-color;
+  text-decoration: none;
+}
+.page {
+  display: flex;
+  flex-direction: column;  
+  &__content {
+    flex: 1 0 auto;
+  }
+  &__footer {
+    font-family: $font-family-montserrat-semibold;
+    font-weight: 600;
+  }
+}
+ol, ul {
+  padding: 0;
+  list-style: none;
+}
+.toggle-dropdown {
+  white-space: nowrap;
+}

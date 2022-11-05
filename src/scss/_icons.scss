@@ -1,0 +1,48 @@
+[class^="icon-"] {
+  &::after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    background-size: cover;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+  }
+}
+.icon-arrow-right {
+  &::after {
+    background-image: url(../img/arrow-right.svg);
+  }
+}
+.icon-arrow-up-right {
+  &::after {
+    background-image: url(../img/arrow-up-right.svg);
+    width: 14px;
+    height: 14px;
+  }
+}
+.icon-arrow {
+  &::after {
+    background-image: url(../img/arrow.svg);
+  }
+}
+.icon-menu {
+  &::after {
+    background-image: url(../img/menu.svg);
+    width: 20px;
+    height: 20px;
+  }
+}
+.icon-cross {
+  &::after {
+    background-image: url(../img/cross.svg);
+    width: 20px;
+    height: 20px;
+  }
+}
+.icon-search {
+  &::after {
+    background-image: url(../img/search.svg);
+  }
+}
