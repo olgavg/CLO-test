@@ -1,7 +1,7 @@
 const path = require('path');
 const filename = (ext) => `[name].${ext}`;
 const HTMLWebpackPlugin = require('html-webpack-plugin');
-//const {CleanWebpackPlugin} = require('clean-webpack-plugin');
+const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const PostcssPresetEnv = require('postcss-preset-env');
 const AutoPrefixer = require("autoprefixer");
@@ -29,7 +29,7 @@ module.exports = {
       template: path.resolve(__dirname, 'src/index.html'),
       filename: 'index.html'
     }),
-    //new CleanWebpackPlugin(),
+    new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: `./css/${filename('css')}`
     }),
@@ -80,10 +80,10 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node-modules/,
-        use: ['babel-loader'],
+        use: ['babel-loader']
       },
       {
-        test: /\.(?:|gif|jpg|jpeg|png|svg)$/,
+        test: /\.(?:|gif|jpg|jpeg|png|svg|ico)$/,
         type: 'asset/resource',
         generator: {
           filename: `./img/${filename('[ext]')}`
